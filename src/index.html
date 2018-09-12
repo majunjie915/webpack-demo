@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Asset Management</title>
+  <!-- 要加上 rel="stylesheet" 属性，否则文件不加载 -->
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+  <section>
+    测试一下
+    <div class="my-div"></div>
+    <img src="img/logo.png" alt="">
+  </section>
+  <script type="text/javascript" src="//s.autoimg.cn/mass/zepto-1.2.2.min.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>
