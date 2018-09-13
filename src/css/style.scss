@@ -1,20 +1,17 @@
 @charset "UTF-8";
-
+@import "reset";
 // px转rem
 @function pr($px, $base: 32) {
   @return ($px / $base) * 1rem;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 body {
   color: red;
   background: #eee;
   .my-div {
     width: pr(160);
     height: pr(60);
-    background: url(/img/logo.png) 0 0 no-repeat;
+    background: url(../img/logo.png) 0 0 no-repeat;
     background-size: 100%;
   }
 }

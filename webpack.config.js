@@ -13,7 +13,8 @@ module.exports = {
   },
   output: {
     filename: 'js/[name].[chunkhash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   devServer: {
     contentBase: './dist',
