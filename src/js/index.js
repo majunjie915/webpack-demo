@@ -1,6 +1,7 @@
-import {cube} from './lib/math.js';
+import {initFont} from './lib/math.js';
 import '../css/style.scss'
 
+initFont();
 $.ajax({
   url: '/api/pintu/getlotuserlist',
   type: 'post',
